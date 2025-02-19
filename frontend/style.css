@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Body styles */
+/* Body styles . DO NOT REMOVE OR EDIT UNLESS ABSOLUTELY NECESSARY */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -15,7 +15,7 @@ body {
     padding-top: 30px;
 }
 
-/* Disclaimer styles */
+/* Disclaimer styles . DO NOT REMOVE OR EDIT UNLESS ABSOLUTELY NECESSARY  */
 .disclaimer {
     position: fixed;
     top: 0;
