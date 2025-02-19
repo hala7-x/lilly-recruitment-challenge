@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Medicine Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +12,54 @@
     </div>
     <header>
         <h1>Medicine Tracker</h1>
+        <p class="instruction">
+            To add a new medicine, please enter the name and price in the required fields below, then click 'Add Medicine.' All fields are required.
+        </p>
     </header>
-    <main>
 
+    <main>
+        <!-- Form for adding a new medicine -->
+        <form id="medicineForm">
+            <div>
+                <label for="nameInput">Medicine Name:</label>
+                <input type="text" id="nameInput" required placeholder="Enter medicine name">
+            </div>
+            <div>
+                <label for="priceInput">Price:</label>
+                <input type="text" id="priceInput" required placeholder="Enter price">
+            </div>
+            <button type="submit">Add Medicine</button>
+        </form>
+
+        <!-- Medicine List -->
+        <table id="medicineTable">
+            <thead>
+                <tr>
+                    <th>Medicine Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Button to get average price -->
+        <button id="getAvgPriceBtn">Get Average Price</button>
+        
+        <!-- Display Average Price -->
+        <div id="averagePriceSection">
+            <p id="averagePrice">Average Price: $0.00</p>
+        </div>
+
+        <!-- Success Message Popup -->
+        <div id="popup" class="popup">
+            <p id="popupMessage"></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
     </main>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
